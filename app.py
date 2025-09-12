@@ -37,10 +37,8 @@ CONSTITUTION_DF = None
 ARTICLE_EMBEDDINGS = None
 
 def preprocess_and_embed_data():
-    """
-    Reads the constitution data, preprocesses it, and generates embeddings.
-    This function runs only once when the application starts.
-    """
+    # Reads the constitution data, preprocesses it, and generates embeddings.
+    # This function runs only once when the application starts.
     global CONSTITUTION_DF, ARTICLE_EMBEDDINGS
     try:
         df = pd.read_csv(BOOK_PATH)
@@ -70,9 +68,7 @@ def preprocess_and_embed_data():
 # --- 3. CORE CHATBOT LOGIC (RETRIEVAL-AUGMENTED GENERATION) ---
 
 def find_relevant_articles(query, top_k=5):
-    """
-    Finds the most relevant articles to a user's query using vector similarity.
-    """
+    # Finds the most relevant articles to a user's query using vector similarity.
     # --- THIS IS THE CORRECTED PART ---
     # Generate an embedding for the user's query using the correct function
     query_embedding_response = genai.embed_content(
@@ -94,9 +90,7 @@ def find_relevant_articles(query, top_k=5):
 
 @lru_cache(maxsize=128)
 def get_chatbot_response(user_input):
-    """
-    Generates a chatbot response using RAG.
-    """
+    #Generates a chatbot response using RAG.
     relevant_context = find_relevant_articles(user_input)
     prompt = f"""
     You are an expert on the Indian Constitution. Answer the user's question based *only* on the following context provided from the constitution.
