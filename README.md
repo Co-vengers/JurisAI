@@ -80,6 +80,9 @@ Follow these steps to get the application running on your local machine.
 ## 📂 Project File Structure
 ```text
 ├── app.py
+├── config.py
+├── views.py
+├── utils.py
 ├── conversation_history.json
 ├── indian_constitution copy.csv
 ├── LICENSE
