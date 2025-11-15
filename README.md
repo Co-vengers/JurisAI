@@ -1,4 +1,4 @@
-# 🇮🇳 Indian Constitution Chatbot
+# JurisAI
 
 A smart, conversational chatbot powered by Flask and Google's Gemini API that allows you to ask questions and get context-aware answers directly from the text of the Indian Constitution.
 
@@ -6,7 +6,7 @@ This project uses a Retrieval-Augmented Generation (RAG) system, ensuring that t
 
 ![Indian Constitution Chatbot Interface](https://i.imgur.com/KjWv9rF.png)
 
-## ✨ Features
+## Features
 
 - **Advanced Conversational AI:** Ask complex questions in natural language and get precise answers.
 - **Retrieval-Augmented Generation (RAG):** Instead of sending the entire constitution to the AI, the app first finds the most relevant articles using vector embeddings, leading to faster and more accurate responses.
@@ -16,7 +16,7 @@ This project uses a Retrieval-Augmented Generation (RAG) system, ensuring that t
 
 ***
 
-## 🔧 How It Works
+## How It Works
 
 The chatbot's intelligence comes from a Retrieval-Augmented Generation (RAG) pipeline:
 
@@ -26,7 +26,7 @@ The chatbot's intelligence comes from a Retrieval-Augmented Generation (RAG) pip
 
 ***
 
-## 🚀 Setup and Installation
+## Setup and Installation
 
 Follow these steps to get the application running on your local machine.
 
@@ -77,7 +77,7 @@ Follow these steps to get the application running on your local machine.
 ***
 
 
-## 📂 Project File Structure
+## Project File Structure
 ```text
 ├── app.py
 ├── config.py
