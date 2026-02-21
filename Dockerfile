@@ -15,4 +15,4 @@ RUN chmod +x ./start.sh || true
 
 EXPOSE 5000
 
-CMD ["./start.sh"]
+CMD ["sh", "./start.sh"]
