@@ -18,7 +18,7 @@ class Utils:
             print("Generating embeddings for all articles. This may take a moment...")
 
             response = genai.embed_content(
-                model="models/text-embedding-004",  # The model for embedding
+                model="models/gemini-embedding-001",  # The model for embedding
                 content=CONSTITUTION_DF['Text'].tolist(),
                 task_type="retrieval_document"
             )
@@ -34,7 +34,7 @@ class Utils:
 
     def find_relevant_articles(self, query, top_k=5):
         query_embedding_response = genai.embed_content(
-            model="models/text-embedding-004",
+            model="models/gemini-embedding-001",
             content=query,
             task_type="retrieval_query"
         )
