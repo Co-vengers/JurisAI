@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.env
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.git/
+.gitignore
+*.ipynb_checkpoints
+conversation_history.json
